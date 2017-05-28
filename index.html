@@ -46,19 +46,149 @@
     <!-- Stylesheets: App -->
     <link rel="stylesheet" media="all" href="css/fonts.css">
     <link rel="stylesheet" media="all" href="css/typography.css">
+    <link rel="stylesheet" media="all" href="css/hexagon.css">
+    <link rel="stylesheet" media="all" href="css/grid.css">
     <link rel="stylesheet" media="all" href="css/main.css">
     <!-- Modernizr: feature detection -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    
 </head>
   </head>
   <body>
-    <div class="intro">
+    <!--<div class="intro">
       <h1>GDM - HTML5 Template</h1>
       <p>We educate future talents in Design for Print and Non-Print, Web- and App Development, Audio and Video Production, 2D- and 3D Animations, Printing and Packaging and the whole Management of those workflows!</p>
+    </div>-->
+    <header class="grid__wrapper grid__column-12">
+        <div id="main-navigation-wrapper"> <!--een soort box waar al de rest inzit, kun je gebruiken om alles samen te positioneren, een achtergrondkleur te geven etc-->
+          <div class="container"> <!--idem div hierboven-->
+              <div class="row">
+                  <nav> <!--geeft aan dat hier de navigatie inkomt-->
+                      <ul class="clearfix"> <!--clearfix is een stuk code dat je van internet haalt en vaak voorkomende problemen met je divs oplost, moet je zelf niet snappen enkel gebruiken-->
+                          <div class="left">
+                            <li>
+                              <img src="assets/images/LMD.png" alt="Logo">
+                            </li>
+                          </div>
+                          <div class="right">
+                            <li>
+                                <a href="index.html" title="Back to the Webdesign II's homepage">Home</a>
+                                <!--href=# verwijst nr de pagina waar je nu op zit, vervangen door de url die je wil-->
+                            </li>
+                            <li>
+                                <a href="social.html" title="Webdesign II's Blog">Social</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" title="Webdesign II's Portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="about.html" title="Webdesign II's Portfolio">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" title="Webdesign II's Portfolio">Contact</a>
+                            </li>
+                          </div>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <div class="grid__wrapper">
+      <div class="index_info grid__column-6 grid__offset-3">
+        <h1>Welkom bij Lars Modern Design </br></br></h1>
+        <h2>Recente werken: </br></br></h2>
+        <ul>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="portfolio.html#portfolio1">
+                <img src="assets/images/portfolio1.jpg" alt="" />
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="portfolio.html#portfolio2">
+                <img src="assets/images/portfolio2.jpg" alt="" />
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="portfolio.html#portfolio3">
+                <img src="assets/images/portfolio2.jpg" alt="" />
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="assets/images/portfolio2.jpg" alt="" />
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+          <li class="hex">
+            <div class="hexIn">
+              <a class="hexLink" href="#">
+                <img src="assets/images/portfolio2.jpg" alt="" />
+                <h1>This is a title</h1>
+                <p>Some sample text about the article this hexagon leads to</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+
+
     <!-- Scripts: Vendors -->
       <!-- For example: jQuery, lodash, handlebars, ... -->
     <!-- Scripts: App -->
     <script src="js/main.js"></script>
   </body>
+  <footer>
+    <div class="grid__wrapper">
+      <div class="grid__column-4 grid__offset-4">
+        <div class="footerInfo">
+          <ul>
+            <div class="left">
+              <li>
+                <a href="index.html" title="Back to the Webdesign II's homepage">Home</a>
+              </li>
+              <li>
+                <a href="social.html" title="Webdesign II's Blog">Social</a>
+              </li>
+              <li>
+                <a href="portfolio.html" title="Webdesign II's Portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="about.html" title="Webdesign II's Portfolio">About</a>
+              </li>
+              <li>
+                <a href="contact.html" title="Webdesign II's Portfolio">Contact</a>
+              </li>
+            </div>
+            <div class="right">
+              <ol>
+                <h2>Contact us</br></h2>
+                <p>Charlestonstraat 3 </br>
+                9880 Aalter</br>
+                Lars Modern Design</br>
+                lmd@gmail.com</p>
+              </ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>

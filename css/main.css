@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: Ranga, Helvetica, serif;
+    font-weight: 400;
+    font-size:22px;
+    line-height: 1.5;
+}
+
+a {
+  font-family: Oswald;
+  font-weight: 600;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -10,19 +38,177 @@ html, body {
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
-
+  background: rgb(165, 154, 132);
+  background-image: url(../assets/images/BG.jpg);
+  background-attachment: fixed;
   color: rgba(232,234,246 ,1);
 }
 
-.intro {
-  width: 90vw;
+header{
+  /*background: url(../assets/images/header.jpg) no-repeat;*/
+  background-size: 100%;
+  background-color: rgba(113,94,77,0.6);
+  /*width: 100%;*/
+  height: 150px;
+}
 
-  padding: 1rem;
-  margin-top: 1rem;
+footer { 
+    margin-top: 75px;
+  background: rgb(165, 154, 132);
+  height: 200px;
+}
 
-  background: rgba(41,182,246 ,1);
-  color: rgba(1,87,155 ,1);
+#logo {
+  background-image: url(../assets/images/LMD.png);
+}
+
+/* Navigation */
+#main-navigation-wrapper * {
+    box-sizing: border-box; /*padding en width worden hierdoor bij je box gerekend, je zet dit best gwn bovenaan bij de body of *-selector, aangezien het voor alles nuttig is*/
+    /*niet superbelangerijk om te begrijpen, gewoon standaard gebruiken :) */
+}
+#main-navigation-wrapper{
+    background:rgba(211, 84, 0,1.0);
+    border-bottom:4px solid rgba(241, 196, 15,1.0);
+}
+nav {
+    display:block; /*van je nav een block-element maken (begint altijd op een nieuwe lijn en strekt zo breed uit als het kan)*/
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size:36px;
+    background:rgba(230, 126, 34,0.36);
+}
+nav ul { /*pas alles na de haakjes toe op de ul die binnen nav staat*/
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav img{
+    width: 400px;
+    height: 150px;
+}
+nav li { /*pas alles na de haakjes toe op de li's die binnen nav staan*/
+    display:block; /*idem als bij nav*/
+    float:left; /*zet alle li's naast elkaar ipv onder elkaar als er ruimte voor is*/
+    height: 150px;
+    text-align: center;
+    border-right:1px solid rgba(241, 196, 15,1.0);
+}
+nav a {
+    display:block;
+    text-decoration:none;
+    padding:15px 25px;
+    color:rgba(241, 196, 15,1.0);
+    font-weight:800;
+    /*border-right:1px solid rgba(241, 196, 15,1.0);*/
+    text-transform: uppercase;
+}
+/*nav li:first-of-type > a {
+    border-left:1px solid green;
+}*/ 
+nav a:hover,
+nav a:focus,
+nav li.active > a /*pas alles na de haakjes toe op de a's van de li die nu actief is */
+{
+    background:rgba(241, 196, 15,1.0);
+    color:rgba(211, 84, 0,1.0);
+    height: 150px;
+    transition:all 360ms ease-in 0s;
+} 
+
+.portfolio_info .hex {
+    margin: 5px;
+}
+
+.left {
+    position: absolute;
+}
+.right {
+    float: right;
+    position: relative;
+}
+
+.index_info,
+.portfolio_info,
+.about_info {
+    background-color: rgba(113,94,77,0.95);
+    margin-top: 50px;
+    border: 1px solid rgba(241, 196, 15,1.0);
+}
+
+.index_info,
+.about_info {
+    height: 880px;
+}
+
+.portfolio_info {
+    height: 500px;
+}
+
+.contact_info {
+    background-color: rgba(113,94,77,0.95);
+    height: 880px;
+    margin-top: 50px;
+    border: 1px solid rgba(241, 196, 15,1.0);
+}
+
+.index_info h1,
+.index_info h2 ,
+.about_info h1,
+.about_info h2{
+    text-align: center;
+}
+
+.about_info1,
+.about_info2,
+.about_info3 {
+    float: left;
+    width: 33.333333337%;
+    height: 100%;
+}
+
+about_p {
+    text-align: center;
+}
+
+.contact_info .grid__column-8{
+    height: 100%;
+    border-right: 1px solid rgba(241, 196, 15,1.0);
+}
+
+button {
+    background-color: rgba(241, 196, 15,1.0);
+    width: 150px;
+    height: 45px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footerInfo {
+    margin-top: 10px;
+}
+
+.footerInfo a,{
+    font-size:20px;
+}
+
+.footerInfo a:visited {
+    text-decoration: underline;
+    color: rgba(241, 196, 15,1.0);
+}
+
+
+.footerInfo li {
+    color:rgba(241, 196, 15,1.0);
+    padding-top: 5px;
+}   
+
+.footerInfo h2{
+    font-size: 25px;
 }
